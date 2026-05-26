@@ -1,31 +1,75 @@
-# Data Cleaning & Preparation
+# Data Cleaning and Preparation
 
-## Objective
-Clean and prepare a raw e-commerce dataset by handling missing values, verifying duplicate records, standardizing data formats, and validating data consistency.
+This project was completed as part of my Data Analytics Internship at DecodeLabs.
+
+The goal of this project was to clean a raw e-commerce dataset and make it ready for further analysis. Before any analysis or visualization can be performed, the data must be checked for missing values, duplicate records, formatting issues, and incorrect entries. This project helped me understand the importance of data quality in the analytics process.
 
 ## Dataset Information
-- Records: 1200
-- Columns: 14
 
-## Tasks Performed
-- Identified missing values
-- Replaced missing CouponCode values with "No Coupon"
-- Checked duplicate rows
-- Verified unique Order IDs
-- Standardized date format (YYYY-MM-DD)
-- Cleaned text fields
-- Validated TotalPrice calculations
-- Exported cleaned dataset
+- Total Records: 1200
+- Total Columns: 14
+- Dataset Type: E-commerce Transactions
+
+## Work Done
+
+### Missing Values
+I checked the dataset for missing values and found missing entries in the `CouponCode` column. These values were replaced with **"No Coupon"** since an empty value indicated that no coupon was used.
+
+### Duplicate Check
+The dataset was checked for duplicate rows and duplicate Order IDs. No duplicate records were found.
+
+### Date Formatting
+The date column was converted into a consistent `YYYY-MM-DD` format to improve readability and maintain uniformity across the dataset.
+
+### Text Cleaning
+Text columns were cleaned by removing extra spaces and standardizing the formatting of categorical values.
+
+### Data Validation
+The `TotalPrice` column was validated by comparing it with the calculation:
+
+```
+TotalPrice = Quantity × UnitPrice
+```
+
+No inconsistencies were found.
 
 ## Tools Used
+
 - Python
 - Pandas
 - NumPy
 - Jupyter Notebook
+- Excel
 
 ## Results
-- Missing Values: 0
-- Duplicate Rows: 0
+
+After cleaning:
+
+- Missing values: 0
+- Duplicate rows: 0
 - Duplicate Order IDs: 0
-- Standardized Date Format: Yes
-- Data Validation Passed: Yes
+- Date formats standardized
+- Data validation completed successfully
+
+## Files Included
+
+- `Data_Cleaning_Project.ipynb` – Complete cleaning process
+- `Dataset for Data Analytics.xlsx` – Original dataset
+- `cleaned_dataset.csv` – Cleaned dataset
+- `cleaned_dataset.xlsx` – Cleaned dataset in Excel format
+
+## What I Learned
+
+Through this project, I gained practical experience in:
+
+- Working with real datasets
+- Handling missing values
+- Detecting duplicate records
+- Cleaning and formatting data
+- Using Pandas for data preprocessing
+- Preparing data for future analysis
+
+## Author
+
+Gautam Verma  
+Data Analytics Intern – DecodeLabs
