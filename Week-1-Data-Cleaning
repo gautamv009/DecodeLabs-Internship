@@ -1,0 +1,31 @@
+# Data Cleaning & Preparation
+
+## Objective
+Clean and prepare a raw e-commerce dataset by handling missing values, verifying duplicate records, standardizing data formats, and validating data consistency.
+
+## Dataset Information
+- Records: 1200
+- Columns: 14
+
+## Tasks Performed
+- Identified missing values
+- Replaced missing CouponCode values with "No Coupon"
+- Checked duplicate rows
+- Verified unique Order IDs
+- Standardized date format (YYYY-MM-DD)
+- Cleaned text fields
+- Validated TotalPrice calculations
+- Exported cleaned dataset
+
+## Tools Used
+- Python
+- Pandas
+- NumPy
+- Jupyter Notebook
+
+## Results
+- Missing Values: 0
+- Duplicate Rows: 0
+- Duplicate Order IDs: 0
+- Standardized Date Format: Yes
+- Data Validation Passed: Yes
